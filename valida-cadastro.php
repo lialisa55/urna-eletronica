@@ -3,15 +3,15 @@
 
     $codigo = $_GET['codigo'];
     $nome = $_GET['nome'];
-	$host  = "localhost:3306";
+	$host  = "localhost:3307";
 	$user  = "root";
-	$pass  = "";
-    $base  = "pw2";
+	$pass  = "root";
+    $base  = "eleicoes";
 	$con   = mysqli_connect($host, $user, $pass, $base);
 	
 	
 	
-	$res = mysqli_query($con,"INSERT INTO tb_eleitor(id, nome, email) VALUES($codigo,'$nome')"); 
+	$res = mysqli_query($con,"INSERT INTO tb_eleitor(codigo, nome) VALUES($codigo,'$nome')"); 
 	echo ("Cadastro realizada com sucesso!");
     
 	
@@ -22,7 +22,7 @@ echo "<table border=3px><tr><td>Nome do Usuário</td><td>Email</td></tr>";
 while($escrever=mysqli_fetch_array($res2)){
 
 /*Escreve cada linha da tabela*/
-echo "</td><td>" . $escrever['nome'] . "</td><td>" . $escrever['email'] . "</td></tr>";
+echo "</td><td>" . $escrever['nome'] . "</td><td>" . $escrever['codigo'] . "</td></tr>";
 
 }/*Fim do while*/
 

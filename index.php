@@ -30,5 +30,18 @@
           </ul>
         </div>
       </nav>
+      <?php
+
+$host  = "localhost:3307";
+$user  = "root";
+$pass  = "root";
+  $base  = "eleicoes";
+$con   = mysqli_connect($host, $user, $pass, $base);
+
+echo "<br>";
+echo "Conexao Ok";
+
+mysqli_close($con);
+?>
 </body>
 </html>

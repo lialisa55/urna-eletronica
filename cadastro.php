@@ -30,7 +30,7 @@
           </ul>
         </div>
       </nav>
-      <form action="valida-cadastro.php" method="GET" class="row g-3">
+      <form action="valida-cadastro.php" method="POST" class="row g-3">
         <div class="col-md-6">
           <label for="name" class="form-label">Nome</label>
           <input name="nome" type="name" class="form-control" id="nome">
@@ -61,11 +61,13 @@
         </div>
         <div class="col-md-2">
           <label for="inputZip" class="form-label">Código</label>
-          <input nome="codigo" type="text" class="form-control" id="inputZip">
+          <input nome="codigo" type="text" class="form-control" id="codigo">
         </div>
+        
         <div class="col-12">
-          <button action="valida-cadastro.php" type="submit" class="btn btn-primary">Registrar</button>
+          <button type="submit" class="btn btn-primary">Registrar</button>
         </div>
+        <input type="SUBMIT"  value="Cadastrar">
       </form>
 </body>
 </html>

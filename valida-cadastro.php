@@ -1,8 +1,8 @@
 ﻿<meta charset="utf-8"> 
 <?php
 
-    $codigo = $_GET['codigo'];
-    $nome = $_GET['nome'];
+    $codigo = $_POST['codigo'];
+    $nome = $_POST['nome'];
 	$host  = "localhost:3307";
 	$user  = "root";
 	$pass  = "root";
@@ -16,7 +16,7 @@
     
 	
 	$res2 = mysqli_query($con,"SELECT * FROM tb_eleitor;");
-echo "<table border=3px><tr><td>Nome do Usuário</td><td>Email</td></tr>";
+echo "<table border=3px><tr><td>Nome do Usuário</td><td>Código</td></tr>";
 
 /*Enquanto houver dados na tabela para serem mostrados será executado tudo que esta dentro do while */
 while($escrever=mysqli_fetch_array($res2)){

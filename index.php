@@ -11,6 +11,7 @@
 
       <?php
 include('navbar.php');
+include('conexao.php');
 
 mysqli_close($con);
 ?>

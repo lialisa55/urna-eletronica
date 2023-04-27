@@ -4,8 +4,6 @@ $senha = $_GET['senha'];
 $codigo = $_GET['codigo'];
 session_start(); 
 
-include "db_conn.php";
-
 if (isset($_POST['codigo']) && isset($_POST['senha'])) {
 
     if(strlen($_GET['codigo']) == null){
@@ -32,6 +30,7 @@ if (isset($_POST['codigo']) && isset($_POST['senha'])) {
 
             header("Location: index.php");
         }
+        
         else {
             echo "Código de eleitor ou senha incorretos";
         }

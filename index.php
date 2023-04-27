@@ -10,10 +10,11 @@
 <body>
 
       <?php
+      if(!isset($_SESSION)){
+        session_start();
+      }
 include('navbar.php');
-include('conexao.php');
-
-mysqli_close($con);
 ?>
+<h1>Bem vindo às eleições 2023, <?php echo $_SESSION['nome']; ?></h1>
 </body>
 </html>

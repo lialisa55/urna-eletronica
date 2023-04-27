@@ -15,13 +15,13 @@
         <div class="row mb-3">
           <label for="inputEmail3" class="col-sm-2 col-form-label">Código de título de eleitor</label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3">
+            <input type="name" class="form-control" name="codigo">
           </div>
         </div>
         <div class="row mb-3">
           <label for="inputPassword3" class="col-sm-2 col-form-label">Senha</label>
           <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword3">
+            <input type="password" class="form-control" name="senha">
           </div>
     </div>
     <div class="col-12">

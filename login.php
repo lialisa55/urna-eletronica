@@ -11,7 +11,7 @@
   <?php
   include('navbar.php')
   ?>
-    <form action="valida-login.php">
+    <form action="valida-login.php" method="GET">
         <div class="row mb-3">
           <label for="inputEmail3" class="col-sm-2 col-form-label">Código de título de eleitor</label>
           <div class="col-sm-10">

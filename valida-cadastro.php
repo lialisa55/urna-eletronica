@@ -1,16 +1,9 @@
 ﻿<meta charset="utf-8"> 
 <?php
-
+	include('conexao.php');
     $codigo = $_GET['codigo'];
     $nome = $_GET['nome'];
 	$senha = $_GET['senha'];
-	$host  = "localhost:3307";
-	$user  = "root";
-	$pass  = "root";
-    $base  = "eleicoes";
-	$con   = mysqli_connect($host, $user, $pass, $base);
-	
-	
 	
 	$res = mysqli_query($con,"INSERT INTO tb_eleitor(codigo, nome, senha) VALUES('$codigo','$nome','$senha')"); 
 	echo ("Cadastro realizada com sucesso!");

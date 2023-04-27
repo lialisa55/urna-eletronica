@@ -48,7 +48,6 @@ include('navbar.php')
         <div class="col-12">
           <button type="submit" class="btn btn-primary">Registrar</button>
         </div>
-        <input type="SUBMIT"  value="Cadastrar">
       </form>
 </body>
 </html>

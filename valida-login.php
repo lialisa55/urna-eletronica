@@ -1,5 +1,5 @@
 <?php 
-include('conexao.php')
+include('conexao.php');
 session_start(); 
 
 include "db_conn.php";
@@ -23,3 +23,5 @@ if (isset($_POST['codigo']) && isset($_POST['senha'])) {
     exit();
 
 }
+mysqli_close($con);
+?>

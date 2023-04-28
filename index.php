@@ -12,7 +12,7 @@
       <?php
       if(!isset($_SESSION)){
         session_start();
-      }
+      };
 include('navbar.php');
 ?>
 <h1>Bem vindo às eleições 2023, <?php echo $_SESSION['nome']; ?></h1>

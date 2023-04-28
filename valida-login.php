@@ -1,8 +1,7 @@
 <?php 
 include('conexao.php');
-session_start(); 
 
-if (isset($_POST['codigo']) && isset($_POST['senha'])) {
+if (isset($_GET['codigo']) && isset($_GET['senha'])) {
 
     if(strlen($_GET['codigo']) == null){
         echo "Preencha seu email";
@@ -12,10 +11,10 @@ if (isset($_POST['codigo']) && isset($_POST['senha'])) {
     }
     else{
 
-        $codigo = $mysqli->real_escape_string($_GET['codigo']);
-        $senha = $mysqli->real_escape_string($_GET['senha']);
-        $sql_code = "SELECT * FROM usuarios WHERE codigo = '$codigo' AND senha = '$senha'";
-        $sql_query = $mysqli->query($sql_code) or die($mysqli->error);
+        $codigo = $_GET['codigo'];
+        $senha = $_GET['senha'];
+        $sql_code = "SELECT * FROM tb_eleitor WHERE codigo = '$codigo' AND senha = '$senha'";
+        $sql_query = $con->query($sql_code) or die($con->error);
 
         $quantidade = $sql_query->num_rows;
 
@@ -24,7 +23,7 @@ if (isset($_POST['codigo']) && isset($_POST['senha'])) {
 
             if(!isset($_SESSION)) {
                     session_start();
-            }
+            };
 
             $_SESSION['codigo'] = $usuario['codigo'];
             $_SESSION['nome'] = $usuario['nome'];

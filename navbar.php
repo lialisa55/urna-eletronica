@@ -46,7 +46,10 @@
               <a class="nav-link" href="cadastro.php">Cadastro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.php">Login</a>
+              <a class="nav-link" href="login.php">Entrar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sair.php">Sair</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Votar</a>

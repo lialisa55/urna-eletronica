@@ -11,16 +11,27 @@
   <?php
   include('navbar.php')
   ?>
+<<<<<<< HEAD
     <form action="valida-login.php" method="GET" class="container mt-5">
         <div class="row mb-3">
           <label for="inputEmail3" class="col-sm-2 col-form-label">Código de título de eleitor</label>
           <div class="col-md-2">
+=======
+    <form action="valida-login.php" method="GET">
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Código de título de eleitor</label>
+          <div class="col-sm-10">
+>>>>>>> 133c0d1422f8642d488dc0682354bc57e5cf8ad3
             <input type="name" class="form-control" name="codigo">
           </div>
         </div>
         <div class="row mb-3">
           <label for="inputPassword3" class="col-sm-2 col-form-label">Senha</label>
+<<<<<<< HEAD
           <div class="col-md-2">
+=======
+          <div class="col-sm-10">
+>>>>>>> 133c0d1422f8642d488dc0682354bc57e5cf8ad3
             <input type="password" class="form-control" name="senha">
           </div>
     </div>

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+=======
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+>>>>>>> 133c0d1422f8642d488dc0682354bc57e5cf8ad3
         <a class="navbar-brand" href="#">Urna Eletrônica</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -19,6 +23,7 @@
               </li>
           </ul>
         </div>
+<<<<<<< HEAD
       </nav> -->
 
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -58,3 +63,6 @@
         </div>
       </div>
     </nav>
+=======
+      </nav>
+>>>>>>> 133c0d1422f8642d488dc0682354bc57e5cf8ad3

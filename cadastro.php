@@ -11,11 +11,7 @@
 <?php
 include('navbar.php')
 ?>
-<<<<<<< HEAD
       <form action="valida-cadastro.php" method="GET" class="container mt-5">
-=======
-      <form action="valida-cadastro.php" method="GET" class="row g-3">
->>>>>>> 133c0d1422f8642d488dc0682354bc57e5cf8ad3
         <div class="col-md-6">
           <label for="name" class="form-label">Nome</label>
           <input name="nome" type="name" class="form-control">
@@ -49,11 +45,7 @@ include('navbar.php')
           <input name="codigo" type="text" class="form-control">
         </div>
         
-<<<<<<< HEAD
         <div class="col-10">
-=======
-        <div class="col-12">
->>>>>>> 133c0d1422f8642d488dc0682354bc57e5cf8ad3
           <button type="submit" class="btn btn-primary">Registrar</button>
         </div>
       </form>

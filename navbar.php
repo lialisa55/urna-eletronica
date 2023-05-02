@@ -52,7 +52,7 @@
               <a class="nav-link" href="sair.php">Sair</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Votar</a>
+                <a class="nav-link" href="votacao/deputadofederal.php">Votar</a>
               </li>
           </ul>
         </div>

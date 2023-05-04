@@ -13,53 +13,24 @@
     include ('../limitacao.php');
     include ('navbarvotacao.php');
 ?>
-<form>
-  <div class="form-row align-items-center">
+
+<form action="valida-cadastro.php" method="GET" class="container mt-5">    
     <div class="col-sm-3 my-1">
-      <label class="sr-only" for="inlineFormInputName">Name</label>
-      <input type="text" class="form-control" id="inlineFormInputName" placeholder="Jane Doe">
+      <label for="inputZip" class="form-label">Código</label>
+      <input name="numero" type="text" class="form-control">
+    </div>
+    <div class="col-10">
+        <button type="search" class="btn btn-primary my-3">Pesquisar</button>
     </div>
     <div class="col-sm-3 my-1">
-      <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text">@</div>
-        </div>
-        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
-      </div>
-    </div>
-    <div class="col-auto my-1">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
-        <label class="form-check-label" for="autoSizingCheck2">
-          Remember me
-        </label>
-      </div>
-    </div>
-    <div class="col-auto my-1">
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-  </div>
-</form>
-<form action="valida-cadastro.php" method="GET" class="container mt-5">
-    
-    <div class="col-md-2">
-        <div class="form-row align-items-center md-2">
-            <label for="inputZip" class="form-label">Código</label>
-            <input name="numero" type="text" class="form-control">
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </div>
-    <div class="col-md-2">
         <label for="nome-candidato" class="form-label">Nome</label>
         <input name="nome-candidato" type="text" class="form-control">
     </div>
-    <div class="col-md-2">
+    <div class="col-sm-3 my-1">
         <label for="inputZip" class="form-label">Partido</label>
         <input name="numero" type="text" class="form-control">
     </div>
     <div class="col-10">
         <button type="submit" class="btn btn-primary my-3">Registrar</button>
     </div>
-</div>
 </form>

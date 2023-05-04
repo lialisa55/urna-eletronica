@@ -14,41 +14,23 @@
     include ('navbarvotacao.php');
 ?>
 
-<form action="valida-cadastro.php" method="GET" class="container mt-5">
-        <div class="col-md-6">
-          <label for="name" class="form-label">Nome</label>
-          <input name="nome" type="name" class="form-control">
-        </div>
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Senha</label>
-          <input name="senha" type="password" class="form-control" id="inputPassword4">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Endereço</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Rua Cariaru, 321">
-        </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">Cidade</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">Estado</label>
-          <select id="inputState" class="form-select">
-            <option selected>Escolha...</option>
-            <option>SP</option>
-            <option>RJ</option>
-          </select>
-        </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Código</label>
-          <input name="codigo" type="text" class="form-control">
-        </div>
-        
-        <div class="col-10">
-          <button type="submit" class="btn btn-primary">Registrar</button>
-        </div>
-      </form>
+<form action="valida-cadastro.php" method="GET" class="container mt-5">    
+    <div class="col-sm-3 my-1">
+      <label for="inputZip" class="form-label">Código</label>
+      <input name="numero" type="text" class="form-control">
+    </div>
+    <div class="col-10">
+        <button type="search" class="btn btn-primary my-3">Pesquisar</button>
+    </div>
+    <div class="col-sm-3 my-1">
+        <label for="nome-candidato" class="form-label">Nome</label>
+        <input name="nome-candidato" type="text" class="form-control">
+    </div>
+    <div class="col-sm-3 my-1">
+        <label for="inputZip" class="form-label">Partido</label>
+        <input name="numero" type="text" class="form-control">
+    </div>
+    <div class="col-10">
+        <button type="submit" class="btn btn-primary my-3">Registrar</button>
+    </div>
+</form>

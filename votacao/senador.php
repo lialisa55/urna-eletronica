@@ -14,22 +14,23 @@
     include ('navbarvotacao.php');
 ?>
 
-<form action="valida-cadastro.php" method="GET" class="container mt-5">
-
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Código</label>
-          <input name="numero" type="text" class="form-control">
-          <button class="btn btn-primary">Procurar</button>
-        </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Nome</label>
-          <input name="nome-candidato" type="text" class="form-control">
-        </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Partido</label>
-          <input name="numero" type="text" class="form-control">
-        </div>
-        <div class="col-10">
-          <button type="submit" class="btn btn-primary">Registrar</button>
-        </div>
-      </form>
+<form action="valida-cadastro.php" method="GET" class="container mt-5">    
+    <div class="col-sm-3 my-1">
+      <label for="inputZip" class="form-label">Código</label>
+      <input name="numero" type="text" class="form-control">
+    </div>
+    <div class="col-10">
+        <button type="search" class="btn btn-primary my-3">Pesquisar</button>
+    </div>
+    <div class="col-sm-3 my-1">
+        <label for="nome-candidato" class="form-label">Nome</label>
+        <input name="nome-candidato" type="text" class="form-control">
+    </div>
+    <div class="col-sm-3 my-1">
+        <label for="inputZip" class="form-label">Partido</label>
+        <input name="numero" type="text" class="form-control">
+    </div>
+    <div class="col-10">
+        <button type="submit" class="btn btn-primary my-3">Registrar</button>
+    </div>
+</form>

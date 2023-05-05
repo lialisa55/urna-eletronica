@@ -34,3 +34,10 @@
         <button type="submit" class="btn btn-primary my-3">Registrar</button>
     </div>
 </form>
+
+<div class="container mt-5">
+  <img source="coelho-de-estimacao-2.jpg" class="img-fluid"/>
+  <?php
+
+  ?>
+</div>

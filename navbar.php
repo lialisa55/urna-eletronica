@@ -52,9 +52,17 @@
               <a class="nav-link" href="sair.php">Sair</a>
             </li>
             <li class="nav-item">
+<<<<<<< HEAD
                 <a class="nav-link" href="votacao/deputadofederal.php">Votar</a>
+=======
+                <a class="nav-link" href="#">Votar</a>
+>>>>>>> e346e81ccf42238a2055d546c835e52f3a315fd4
               </li>
           </ul>
         </div>
       </div>
+<<<<<<< HEAD
     </nav>
+=======
+    </nav>
+>>>>>>> e346e81ccf42238a2055d546c835e52f3a315fd4

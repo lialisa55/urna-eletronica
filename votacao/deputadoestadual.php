@@ -13,6 +13,7 @@
     include ('../limitacao.php');
     include ('navbarvotacao.php');
 ?>
+<h1 class="row-3"> Seu voto para deputado estadual </h1>
 <div class="container fluid">
   <div class="row">
     <form action="" method="POST" class="col-3 mt-5 mx-auto">
@@ -82,7 +83,7 @@ if(isset($_POST['nome']) && isset($_POST['partido']) && isset($_POST['codigo']))
   
         $con->query("UPDATE tb_deputadoE set votos = ". $select['votos'] + 1 ." WHERE codigo = $codigo;");
   
-        echo('<script> window.location.replace("governador.php");</script>');
+        echo('<script> window.location.replace("senador.php");</script>');
         echo "<script>alert('Voto computado');</script>";
   
     }

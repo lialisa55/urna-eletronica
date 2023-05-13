@@ -6,18 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <title>Presidente da república</title>
-<<<<<<< HEAD
     </head>
-=======
-</head>
->>>>>>> 491769447b690824fc13f59bf8071e607a98d0e0
 
 <?php
     include ('../conexao.php');
     include ('../limitacao.php');
     include ('navbarvotacao.php');
 ?>
-<<<<<<< HEAD
 <div class="container fluid">
   <div class="row">
     <form action="" method="POST" class="col-3 mt-5 mx-auto">
@@ -94,26 +89,3 @@ if(isset($_POST['nome']) && isset($_POST['partido']) && isset($_POST['codigo']))
   }
   
   ?>
-=======
-
-<form action="valida-cadastro.php" method="GET" class="container mt-5">    
-    <div class="col-sm-3 my-1">
-      <label for="inputZip" class="form-label">Código</label>
-      <input name="numero" type="text" class="form-control">
-    </div>
-    <div class="col-10">
-        <button type="search" class="btn btn-primary my-3">Pesquisar</button>
-    </div>
-    <div class="col-sm-3 my-1">
-        <label for="nome-candidato" class="form-label">Nome</label>
-        <input name="nome-candidato" type="text" class="form-control">
-    </div>
-    <div class="col-sm-3 my-1">
-        <label for="inputZip" class="form-label">Partido</label>
-        <input name="numero" type="text" class="form-control">
-    </div>
-    <div class="col-10">
-        <button type="submit" class="btn btn-primary my-3">Registrar</button>
-    </div>
-</form>
->>>>>>> 491769447b690824fc13f59bf8071e607a98d0e0
